@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính chỉ số BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tính chỉ số BMI</h1>
+    </header>
+    <main>
+        <section class="form-tinh-bmi">
+            <h2>Nhập thông tin</h2>
+            <form action="#">
+                <label for="can-nang">Cân nặng (kg):</label>
+                <input type="number" id="can-nang" name="can-nang" placeholder="Nhập cân nặng">
+                <label for="chieu-cao">Chiều cao (mét):</label>
+                <input type="number" id="chieu-cao" name="chieu-cao" placeholder="Nhập chiều cao">
+                <label for="loai-tuoi">Loại tuổi:</label>
+                <select id="loai-tuoi" name="loai-tuoi">
+                    <option value="trung-nien">Trung niên</option>
+                    <option value="gia-lon-tuoi">Già, lớn tuổi</option>
+                </select>
+                <button type="submit">Tính BMI</button>
+            </form>
+        </section>
+        <section class="ket-qua">
+            <h2>Kết quả</h2>
+            <p>Chỉ số BMI của bạn là: <span id="chi-so-bmi"></span></p>
+            <p>Phân loại: <span id="phan-loai"></span></p>
+            <p>Khuyến nghị:</p>
+            <ul id="khuyen-nghi"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
